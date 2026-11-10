@@ -1,115 +1,158 @@
-# Awesome-Billing-User-Roles-Permissions
-# Awesome-Billing-User-Roles-Permissions
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Billing-User-Roles-Permissions">
+    <img src="assets/banner.svg" alt="Awesome Billing User Roles & Permissions Banner" width="100%">
+  </a>
+</p>
 
-## Top Billing User Roles & Permissions Ecosystem
+# Awesome Billing User Roles & Permissions 💳 🔐 🛡️
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-*Focused on User Provisioning, Role Assignment & Permission Delegation for Billing Systems*  
-**Last updated: March 2026**
+<p align="center">
+  <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-CC0_1.0-blue.svg" alt="License: CC0-1.0"></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Billing-User-Roles-Permissions/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Billing-User-Roles-Permissions?style=social&color=white" alt="GitHub Stars"></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Billing-User-Roles-Permissions/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Billing-User-Roles-Permissions?style=social&color=white" alt="GitHub Forks"></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Billing-User-Roles-Permissions/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
+</p>
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Billing User Roles & Permissions**. These tools help organizations manage who can access billing systems, what actions they can perform, and how roles are assigned across teams—covering user lifecycle management, granular permission delegation, and least-privilege enforcement for finance, support, and administrative users.
-
-**Examples** include Chargebee User Management, Okta User Management, Microsoft Entra User Management, Google Workspace Directory, JumpCloud, OneLogin, Ping Identity, CyberArk, Auth0, and AWS IAM (the category leaders).
-
-**Open-source emphasis**: This section highlights every major active project for self-hosted identity and access management with native RBAC, user provisioning, and permission delegation—ideal for SaaS builders, platform engineers, and security teams building transparent, vendor-neutral billing access control.
-
-Contributions welcome! Open an PR to add/update entries. Keep descriptions factual and link to official sites.
-
-## Table of Contents
-- [SaaS/Hosted Platforms](#saas-products)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
-
-## SaaS/Hosted Platforms
-
-- **[Chargebee User Management](https://www.chargebee.com/docs/billing/2.0/site-configuration/account_settings)**  
-  Billing platform with predefined roles (Tech Support, Analyst, Sales Agent, Customer Support, Sales Manager, Finance Executive, Developer, Owner) and support for custom roles via CSV configuration; users can hold multiple roles, with explicit deny taking precedence; separate TEST and LIVE site access requires independent invitations [citation:1][citation:12].
-
-- **[Okta User Management](https://developer.okta.com/docs/api/openapi/okta-management/guides/roles)**  
-  Identity platform with standard admin roles (ORG_ADMIN, USER_ADMIN, APP_ADMIN, HELP_DESK_ADMIN, READ_ONLY_ADMIN, etc.) and IAM-based standard roles with preset permission sets; custom roles allow granular permission assignment, with resource targeting for scoped access [citation:2].
-
-- **[Microsoft Entra User Management](https://learn.microsoft.com/en-us/entra/)**  
-  Cloud IAM with built-in roles including Global Administrator, User Administrator, Billing Administrator, and custom role definitions; role assignments bind principals to role definitions at tenant, administrative unit, or object scope; custom roles require Entra ID P1/P2 licensing [citation:3][citation:14].
-
-- **[Google Workspace Directory](https://knowledge.workspace.google.com/admin/users/view-role-assignments-and-privileges)**  
-  Admin console with role assignments at user and group level; administrators can view direct and indirect (group-inherited) roles, review granular privileges with organizational unit scope, and manage role assignments from both user and role-centric views [citation:15].
-
-- **[JumpCloud](https://jumpcloud.com/support/vault-roles)**  
-  Directory platform with Vault RBAC supporting three static roles (Admin, Guest, User) plus custom roles with hierarchical permissions; permissions are additive across multiple roles, with special per-user permission overrides for edge cases; default role auto-assigned via SCIM/SSO provisioning [citation:5].
-
-- **[OneLogin](https://docs-be.oneidentity.com/bundle/onelogin_administration-portal/page/guides/administrationportal/roles.htm)**  
-  Identity platform where roles are collections of applications; assigning a user to a role grants access to all included apps; mappings automate role assignment based on user attributes (e.g., department), with manual assignment available for exceptions .
-
-- **[Ping Identity](https://docs.pingidentity.com/autonomous-identity/2022.11.12/admin-guide/chap-manage-identities.html)**  
-  Identity platform with authorization roles assignable during user creation or via existing user editing; default roles have fixed permissions viewable but not editable; role members can be managed from both user detail and role member views [citation:7].
-
-- **[CyberArk](https://docs.cyberark.com/)**  
-  Privileged access management with built-in roles mapped to license types: Privilege Cloud Administrators, Auditors, Safe Managers, Users, External Vendors, Session Risk Managers, and Session Admin; role assignment determines both permissions and license consumption [citation:8].
-
-- **[Auth0](https://auth0.com/docs/get-started/manage-dashboard-access/feature-access-by-role)**  
-  Identity platform with Dashboard roles including Admin, Editor-Connections, Editor-Users, Editor-Organizations, Viewer-Users, and Viewer-Config Settings; each role grants scoped read/write access to specific Dashboard sections with least-privilege enforcement [citation:9].
-
-- **[AWS IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html)**  
-  Identity and access management with users, groups, roles, and policies; managed policies, inline policies, and permissions boundaries control access; policies define allowed/denied actions, resources, and conditions for billing and cost management services [citation:10].
-
-## Open-Source GitHub Projects
-
-- **[Keycloak](https://github.com/keycloak/keycloak)**  
-  Open-source identity and access management with RBAC, fine-grained admin permissions, realms, groups, and role mappings; supports user federation, identity brokering, and authorization services for billing application access control.
-
-- **[Casdoor](https://github.com/casdoor/casdoor)**  
-  Open-source IAM/SSO platform with web UI supporting OAuth 2.0, OIDC, SAML, CAS, LDAP, and RBAC; multi-tenancy via organizations with per-organization users, applications, and roles for billing system isolation.
-
-- **[ZITADEL](https://github.com/zitadel/zitadel)**  
-  Open-source identity platform built on event sourcing with OIDC, SAML, and RBAC; provides audit trails for compliance and multi-instance isolation for tenant-specific billing access management.
-
-- **[Casbin](https://github.com/casbin/casbin)**  
-  Open-source authorization library supporting ACL, RBAC, ABAC, and custom models across Go, Java, Node.js, Python, PHP, .NET, and Rust; middleware integrations for popular web frameworks enable embedded permission checks in billing APIs.
-
-- **[WSO2 Identity Server](https://github.com/wso2/product-is)**  
-  Open-source IAM solution with role-based access control, adaptive MFA, identity federation, and user management via OAuth2, OIDC, SAML, SCIM 2.0, and FIDO2; recognized as a Digital Public Good [citation:11].
-
-- **[Permify](https://github.com/Permify/permify)**  
-  Open-source authorization-as-a-service inspired by Google Zanzibar; supports RBAC, ReBAC, and ABAC with sub-10ms access checks and multi-tenant isolation for billing authorization logic.
-
-- **[OPA (Open Policy Agent)](https://github.com/open-policy-agent/opa)**  
-  Policy-as-code engine using Rego for fine-grained authorization decisions; supports audit logging and multi-dimensional access control for billing API permissions.
-
-### Additional Strong Open-Source Options
-
-- **[Ory Keto](https://github.com/ory/keto)** for Zanzibar-style relationship-based access control with REST API.
-- **[OpenFGA](https://github.com/openfga/openfga)** for fine-grained authorization inspired by Google Zanzibar, with SDKs and a playground.
-- **[Cerbos](https://github.com/cerbos/cerbos)** for policy-as-code authorization with YAML-based policies and language-agnostic SDKs.
-- **[go-iam](https://github.com/melvinodsa/go-iam)** for lightweight multi-tenant IAM in Go with RBAC, custom roles, and OAuth provider integration.
-
-**Frameworks for building custom systems**: Combine **Keycloak** or **ZITADEL** for identity and user management, **Casbin** or **OPA** for embedded authorization logic, and **Casdoor** for multi-tenant billing access control—integrated with billing platforms via SCIM for automated provisioning.
-
-## How to Contribute
-
-1. Fork the repo.
-2. Add/edit entries in `README.md` (follow existing format).
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-4. Submit PR with a short explanation.
-
-Star the repo if you find it useful!
-
-## Disclaimer
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-- Billing user management must enforce separation of duties (e.g., invoice creation vs. refund approval) and comply with financial controls (SOX, PCI DSS where applicable).
-- Self-hosted open-source IAM solutions require proper role design, regular access reviews, and audit logging to prevent privilege creep.
+> **A curated directory and reference architecture of leading SaaS platforms and open-source identity engines for Billing Access Control, Role-Based Access Control (RBAC), Attribute-Based Access Control (ABAC), Zanzibar-style Relationship Authorization (ReBAC), and Multi-Tenant Financial Permissions Governance.** 🚀
 
 ---
 
-**Made for SaaS finance engineers, platform security teams, identity architects, and developers building billing access control.**  
-Let's make billing user permissions more open, granular, and auditable.
+## 📑 Table of Contents
+- [🎯 Executive Summary & SEO Keywords](#-executive-summary--seo-keywords)
+- [🌐 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🏢 SaaS & Hosted Platforms](#-saashosted-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🏗️ Recommended Architecture Patterns](#-recommended-architecture-patterns)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚖️ Disclaimer & Compliance Notice](#️-disclaimer--compliance-notice)
+- [⭐ Star History](#-star-history)
+
+---
+
+## 🎯 Executive Summary & SEO Keywords
+
+Managing billing permissions requires enforcing strict **least-privilege access**, **separation of duties (SoD)**, and immutable **audit trails** across financial systems. Financial operations demand that sensitive privileges—such as refund approvals, invoice modifications, payment gateway reconfigurations, and discount rule updates—remain strictly segregated between finance executives, customer support agents, engineers, and platform administrators.
+
+* **Target Keywords:** `Billing User Roles`, `Billing Permissions Management`, `RBAC for Billing`, `Subscription IAM`, `Separation of Duties (SoD)`, `Google Zanzibar Authorization`, `ReBAC`, `ABAC Policy Engines`, `SCIM User Provisioning`, `Multi-Tenant Authorization`, `SOX Compliance`, `PCI-DSS Level 1 Billing Security`.
+
+---
+
+## 🌐 Sector Overview & Market Dynamics
+
+The global Identity and Access Management (IAM), Policy Governance, and Subscription Billing Authorization market is estimated at **$20.5 Billion in 2026** and projected to surpass **$38.2 Billion by 2031**, expanding at a compound annual growth rate (**CAGR of ~13.2%**). 
+
+The market dynamics exhibit **moderate fragmentation with high enterprise concentration at the identity infrastructure core**:
+- **Core Identity Layer (Concentrated):** The foundational directory and single sign-on tier is anchored by hyperscalers (**Microsoft Entra ID**, **Google Workspace**, **AWS IAM**) and specialized identity conglomerates (**Okta** / **Auth0**, **CyberArk**), which capture the majority of global enterprise workforce seats.
+- **Granular Authorization & Billing RBAC Layer (Fragmented / Best-of-Breed):** Dedicated subscription billing role engines (**Chargebee**, **Stripe Billing**) and specialized fine-grained authorization solutions (Google Zanzibar-inspired engines like **Permify**, **OpenFGA**, **Casbin**, and **Ory Keto**) operate in an open, competitive landscape. Enterprise architectures increasingly avoid single-vendor lock-in by pairing standard cloud identity providers with flexible, decoupled policy-as-code engines.
+
+---
+
+## 🏢 SaaS/Hosted Platforms
+
+The table below lists top enterprise SaaS platforms and identity systems handling billing roles, user provisioning, and authorization. Entries are **sorted in descending order of company valuation / market capitalization**.
+
+| Solution & Link 🏢 | Company Scale & Valuation 📈 | Starting Pricing 💵 | Free Tier / Free Trial Limits 🎁 | Key Billing RBAC & Permissions Capabilities 🔑 |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Microsoft Entra ID](https://learn.microsoft.com/en-us/entra/)** | **~$3.10 Trillion** *(Market Cap)* | **$7.00** / user / month *(Entra ID P1 annual commitment; P2 at $10.00/user/mo)* | **Free forever plan** supporting up to **50,000 directory objects** (up to **300,000 objects** with verified custom domain) or **50,000 external MAUs** | Pre-built Billing Administrator role, conditional access policies, Administrative Unit scoping, Privileged Identity Management (PIM) for just-in-time elevation. 🛡️ |
+| **[Google Workspace Directory](https://knowledge.workspace.google.com/admin/users/view-role-assignments-and-privileges)** | **~$2.10 Trillion** *(Market Cap)* | **$6.00** / user / month *(Business Starter tier, 1-year commitment)* | **14-day free trial** capped at **10 users** *(or Cloud Identity Free forever with up to 50 user licenses)* | Organizational Unit (OU) scoped delegation, custom privilege matrices, direct and indirect group-inherited role assignments, multi-admin approval workflows. 👥 |
+| **[AWS IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html)** | **~$2.00 Trillion** *(Market Cap)* | **$0.00** / month *(Core IAM feature provided at zero additional charge)* | **Free forever** with up to **5,000 IAM users** and **1,000 roles** per account *(pay only for consumed cloud resources)* | Granular JSON policies restricting access to AWS Billing & Cost Management (`aws-portal:*`, `ce:*`), service control policies (SCPs), attribute-based access control. ☁️ |
+| **[Okta Workforce Identity](https://developer.okta.com/docs/api/openapi/okta-management/guides/roles)** | **~$31.0 Billion** *(Market Cap)* | **$6.00** / user / month *(Starter Suite, billed annually; $1,500 annual contract minimum)* | **30-day free trial** with full sandbox access to SSO, MFA, Universal Directory, and Workflows | Granular IAM custom admin roles, resource targeting for scoped financial app access, SCIM lifecycle automation, access requests governance. 🔑 |
+| **[CyberArk](https://docs.cyberark.com/)** | **~$25.0 Billion** *(Acquisition Valuation)* | **$5.00** / user / month *(Workforce Identity Starter; PAM starting at ~$100+/user/mo with ~$25k minimum)* | **14-day free trial** / guided virtual lab for Workforce Identity *(Enterprise PAM requires sales-assisted PoC)* | Privileged Access Management (PAM), session recording for billing administration, role assignments mapped directly to license entitlements and safe permissions. 🔒 |
+| **[Auth0](https://auth0.com/docs/get-started/manage-dashboard-access/feature-access-by-role)** *(an Okta Company)* | **$6.50 Billion** *(Acquisition Valuation)* | **$35.00** / month *(Essentials B2C tier; B2B Essentials starts at $130.00/mo)* | **Free forever plan** supporting up to **25,000 Monthly Active Users (MAUs)** and up to **5 organizations** | Scoped Dashboard roles (Admin, Editor-Organizations, Viewer-Users), RBAC authorization extension, JWT custom claims for multi-tenant billing permissions. 🎟️ |
+| **[OneLogin](https://docs-be.oneidentity.com/bundle/onelogin_administration-portal/page/guides/administrationportal/roles.htm)** *(Quest Software)* | **~$5.40 Billion** *(Quest Software Valuation)* | **$3.00** / user / month *(Basic Plan; Essentials Plan at $6.00/user/month)* | **30-day free trial** with full access to directory integrations, SmartFactor authentication, and app mapping | Application container roles, automated attribute-based role mapping rules, manual permission overrides for exception handling in finance teams. 📊 |
+| **[Chargebee User Management](https://www.chargebee.com/docs/billing/2.0/site-configuration/account_settings)** | **$3.50 Billion** *(Series H Valuation)* | **$249.00** / month *(Performance plan billed annually; includes $50k monthly billing volume)* | **Free forever Starter plan** for early startups up to **$250,000 cumulative lifetime billing volume** *(0.75% overage fee thereafter)* | Pre-built specialized roles (Finance Executive, Analyst, Tech Support, Sales Agent), custom role CSV import, independent TEST vs. LIVE environment permissions. 💳 |
+| **[Ping Identity](https://docs.pingidentity.com/autonomous-identity/2022.11.12/admin-guide/chap-manage-identities.html)** *(Thoma Bravo)* | **$2.80 Billion** *(Take-Private Valuation)* | **$3.00** / user / month *(Workforce Essential tier; typically 5,000-user minimum commitment)* | **30-day free trial** with sandbox support for up to **1,000 active identities** and **5 environments** | Autonomous identity authorization, role definition templates, fine-grained entitlement governance, SCIM-compliant user provisioning for financial services. 🛡️ |
+| **[JumpCloud](https://jumpcloud.com/support/vault-roles)** | **$2.60 Billion** *(Series F Valuation)* | **$9.00** / user / month *(Device Management tier; Core SSO & MFA at $11.00/user/mo billed annually)* | **30-day free trial** with complete access to platform directory, SSO, MFA, and device policies | Vault RBAC with Admin, Guest, and User static roles, custom hierarchical permissions, additive multi-role inheritance, per-user permission overrides. ⚡ |
+
+---
+
+## 💻 Open-Source GitHub Projects
+
+Explore the leading self-hosted and cloud-native open-source solutions for identity, user management, and fine-grained authorization. Repositories are **sorted in descending order of GitHub Stargazers**.
+
+| Project & Repository 💻 | Stars Badge (Links to Stargazers) ⭐ | Core Focus & Architecture 🔍 | Best Use Case in Billing Systems 💡 |
+| :--- | :--- | :--- | :--- |
+| **[Keycloak](https://github.com/keycloak/keycloak)** | [![GitHub stars](https://img.shields.io/github/stars/keycloak/keycloak?style=social&color=white)](https://github.com/keycloak/keycloak/stargazers) | Full-featured Open Source Identity and Access Management (IAM) backed by Red Hat / CNCF | Multi-tenant billing portals requiring realm isolation, fine-grained admin roles, and identity brokering. 🏰 |
+| **[Authelia](https://github.com/authelia/authelia)** | [![GitHub stars](https://img.shields.io/github/stars/authelia/authelia?style=social&color=white)](https://github.com/authelia/authelia/stargazers) | Lightweight Single Sign-On and Multi-Factor Authentication portal for web reverse proxies | Enforcing 2FA and perimeter access controls before users reach internal billing dashboards and finance APIs. 🛡️ |
+| **[Authentik](https://github.com/goauthentik/authentik)** | [![GitHub stars](https://img.shields.io/github/stars/goauthentik/authentik?style=social&color=white)](https://github.com/goauthentik/authentik/stargazers) | Modern open-source Identity Provider focused on flexibility, workflows, and enterprise protocols | Flexible stage-based authentication and SCIM provisioning for syncing billing accounts across SaaS apps. 🧩 |
+| **[Casbin](https://github.com/casbin/casbin)** | [![GitHub stars](https://img.shields.io/github/stars/casbin/casbin?style=social&color=white)](https://github.com/casbin/casbin/stargazers) | Multi-language authorization library supporting ACL, RBAC, ABAC, and RESTful permission models | Embedded microsecond permission evaluations within Go, Node.js, Python, or Java billing APIs. ⚡ |
+| **[ZITADEL](https://github.com/zitadel/zitadel)** | [![GitHub stars](https://img.shields.io/github/stars/zitadel/zitadel?style=social&color=white)](https://github.com/zitadel/zitadel/stargazers) | Cloud-native identity platform built on event sourcing with multi-tenancy and audit trails | B2B SaaS billing architectures requiring strict audit logs, tenant self-management, and delegation. 📜 |
+| **[SuperTokens](https://github.com/supertokens/supertokens-core)** | [![GitHub stars](https://img.shields.io/github/stars/supertokens/supertokens-core?style=social&color=white)](https://github.com/supertokens/supertokens-core/stargazers) | Open-source modular authentication and authorization alternative to Auth0 and Firebase | Custom user role assignments, session verification, and granular permissions embedded in web & mobile apps. 🚀 |
+| **[Logto](https://github.com/logto-io/logto)** | [![GitHub stars](https://img.shields.io/github/stars/logto-io/logto?style=social&color=white)](https://github.com/logto-io/logto/stargazers) | Modern auth and authorization infrastructure for SaaS & AI apps with native multi-tenancy and RBAC | Out-of-the-box tenant organization management and scoped permissions for SaaS subscription tiers. 🧑‍🚀 |
+| **[Casdoor](https://github.com/casdoor/casdoor)** | [![GitHub stars](https://img.shields.io/github/stars/casdoor/casdoor?style=social&color=white)](https://github.com/casdoor/casdoor/stargazers) | Agent-first UI-driven IAM platform supporting OAuth 2.0, OIDC, SAML, LDAP, and SCIM | Centralized multi-organization user directory with web UI for assigning billing roles to staff and customers. 🌐 |
+| **[Ory Kratos](https://github.com/ory/kratos)** | [![GitHub stars](https://img.shields.io/github/stars/ory/kratos?style=social&color=white)](https://github.com/ory/kratos/stargazers) | Headless, cloud-native authentication and identity management service written in Go | Headless identity infrastructure for bespoke billing portals requiring custom registration and profile flows. 🪶 |
+| **[Open Policy Agent (OPA)](https://github.com/open-policy-agent/opa)** | [![GitHub stars](https://img.shields.io/github/stars/open-policy-agent/opa?style=social&color=white)](https://github.com/open-policy-agent/opa/stargazers) | General-purpose policy engine with declarative policy language (Rego) from the CNCF | Externalized policy-as-code evaluation for complex finance rules (e.g., maximum refund amount per role). 📜 |
+| **[OpenFGA](https://github.com/openfga/openfga)** | [![GitHub stars](https://img.shields.io/github/stars/openfga/openfga?style=social&color=white)](https://github.com/openfga/openfga/stargazers) | High-performance Relationship-Based Access Control (ReBAC) engine inspired by Google Zanzibar | Modeling complex organizational billing hierarchies (e.g., "User X can view invoices of Branch Y"). 🌳 |
+| **[Permify](https://github.com/Permify/permify)** | [![GitHub stars](https://img.shields.io/github/stars/Permify/permify?style=social&color=white)](https://github.com/Permify/permify/stargazers) | Open-source authorization-as-a-service inspired by Google Zanzibar with sub-10ms latency | Multi-tenant authorization and ReBAC relations modeling across microservices and billing boundaries. ⚡ |
+| **[Ory Keto](https://github.com/ory/keto)** | [![GitHub stars](https://img.shields.io/github/stars/ory/keto?style=social&color=white)](https://github.com/ory/keto/stargazers) | High-performance, cloud-native Google Zanzibar implementation written in Go | Ultra-fast access-check APIs for validating permission tuples in billing operations. 🔍 |
+| **[Cerbos](https://github.com/cerbos/cerbos)** | [![GitHub stars](https://img.shields.io/github/stars/cerbos/cerbos?style=social&color=white)](https://github.com/cerbos/cerbos/stargazers) | Open-core authorization platform with stateless YAML/JSON policy definitions and rich SDKs | Decoupling business logic from financial policies with clean, testable policy files. 📑 |
+| **[WSO2 Identity Server](https://github.com/wso2/product-is)** | [![GitHub stars](https://img.shields.io/github/stars/wso2/product-is?style=social&color=white)](https://github.com/wso2/product-is/stargazers) | Enterprise-grade identity federation and adaptive authentication server (Digital Public Good) | Complex enterprise deployments integrating legacy LDAP, SAML, and SCIM 2.0 provisioning. 🏛️ |
+| **[go-iam](https://github.com/melvinodsa/go-iam)** | [![GitHub stars](https://img.shields.io/github/stars/melvinodsa/go-iam?style=social&color=white)](https://github.com/melvinodsa/go-iam/stargazers) | Lightweight multi-tenant IAM service in Go with RBAC, OAuth providers, and custom role mappings | Educational reference and lightweight boilerplate for building bespoke Go microservice IAM. 🛠️ |
+
+---
+
+## 🏗️ Recommended Architecture Patterns
+
+For robust, production-grade billing systems, teams frequently adopt a **hybrid multi-layer approach**:
+
+```
+ ┌─────────────────────────────────────────────────────────────┐
+ │               User / Finance Team Interface                 │
+ └──────────────────────────────┬──────────────────────────────┘
+                                │
+                                ▼
+ ┌─────────────────────────────────────────────────────────────┐
+ │       Identity Provider (IdP) & SSO (e.g., Keycloak / Okta) │
+ │       • User Authentication, MFA, Directory Sync (SCIM)    │
+ └──────────────────────────────┬──────────────────────────────┘
+                                │
+                                ▼
+ ┌─────────────────────────────────────────────────────────────┐
+ │       Central Policy Engine (e.g., OPA / Permify / Casbin)  │
+ │       • Zanzibar Relationship Checks (ReBAC) & ABAC Rules   │
+ │       • "Can Finance Manager A approve Refund > $10,000?"   │
+ └──────────────────────────────┬──────────────────────────────┘
+                                │
+                                ▼
+ ┌─────────────────────────────────────────────────────────────┐
+ │       Billing & Subscription Core (Chargebee / Stripe / DB) │
+ │       • Invoicing, Payment Gateways, Immutable Audit Log    │
+ └─────────────────────────────────────────────────────────────┘
+```
+
+1. **Identity & Provisioning Layer:** Use **Keycloak**, **ZITADEL**, or **Microsoft Entra ID** to handle enterprise Single Sign-On (SSO), Multi-Factor Authentication (MFA), and SCIM 2.0 automated provisioning.
+2. **Fine-Grained Authorization Layer:** Use **OpenFGA**, **Permify**, or **Casbin** to enforce sub-10ms relation checks (e.g., tenant boundaries, account-level scoping).
+3. **Policy-as-Code Guardrails:** Enforce operational ceilings with **OPA (Rego)** or **Cerbos** (e.g., daily refund limits, approval escalation matrices, weekend change freezes).
+
+---
+
+## 🤝 How to Contribute
+
+We welcome additions, corrections, and updates from the developer and security community! 🌟
+
+1. **Fork the repository** to your GitHub account. 🍴
+2. **Edit `README.md`** following the existing format:
+   - For SaaS products, provide exact starting pricing, verified free tier limits, and updated valuation/revenue data.
+   - For Open-Source projects, include the proper `style=social&color=white` star badge linking to `/stargazers`.
+3. **Validate links** and ensure descriptions remain objective, technical, and accurate.
+4. **Submit a Pull Request (PR)** with a concise summary of changes. 🚀
+
+---
+
+## ⚖️ Disclaimer & Compliance Notice
+
+- 📋 **Community Curated:** This list is curated for educational and architectural reference and does not constitute commercial endorsement.
+- 💳 **Regulatory Compliance:** Billing and payment permission architectures must comply with relevant legal frameworks, including **SOX Section 404** (separation of financial duties), **PCI-DSS Level 1** (payment token access restrictions), and **SOC 2 Type II** (access review audit trails).
+- 🔒 **Least Privilege:** Always configure explicit deny rules and enforce regular automated access recertification reviews to prevent permission creep.
+
+---
 
 ## ⭐ Star History
 
-<a href="https://star-history.com/#ishandutta2007/Awesome-Billing-User-Roles-Permissions&Timeline" align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/ishandutta2007_Awesome-Billing-User-Roles-Permissions_growth.svg">
-    <img alt="Star History Chart" src="assets/ishandutta2007_Awesome-Billing-User-Roles-Permissions_growth.svg">
-  </picture>
-</a>
+[![Star History Chart](https://api.star-history.com/svg?repos=ishandutta2007/Awesome-Billing-User-Roles-Permissions&type=Date)](https://star-history.com/#ishandutta2007/Awesome-Billing-User-Roles-Permissions&Date)
+
+<p align="center">
+  <b>Built with ❤️ for SaaS Architects, Platform Engineers, and Security Leaders.</b><br>
+  <i>Star the repository if you found this landscape valuable! ⭐</i>
+</p>
