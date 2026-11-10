@@ -7,11 +7,13 @@
 # Awesome Billing User Roles & Permissions 💳 🔐 🛡️
 
 <p align="center">
-  <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
+  <a href="https://github.com/ishandutta2007/Awesoee-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-CC0_1.0-blue.svg" alt="License: CC0-1.0"></a>
   <a href="https://github.com/ishandutta2007/Awesome-Billing-User-Roles-Permissions/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Billing-User-Roles-Permissions?style=social&color=white" alt="GitHub Stars"></a>
   <a href="https://github.com/ishandutta2007/Awesome-Billing-User-Roles-Permissions/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Billing-User-Roles-Permissions?style=social&color=white" alt="GitHub Forks"></a>
   <a href="https://github.com/ishandutta2007/Awesome-Billing-User-Roles-Permissions/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
 
 > **A curated directory and reference architecture of leading SaaS platforms and open-source identity engines for Billing Access Control, Role-Based Access Control (RBAC), Attribute-Based Access Control (ABAC), Zanzibar-style Relationship Authorization (ReBAC), and Multi-Tenant Financial Permissions Governance.** 🚀
@@ -26,7 +28,8 @@
 - [🏗️ Recommended Architecture Patterns](#-recommended-architecture-patterns)
 - [🤝 How to Contribute](#-how-to-contribute)
 - [⚖️ Disclaimer & Compliance Notice](#️-disclaimer--compliance-notice)
-- [⭐ Star History](#-star-history)
+- [⭐ Star History](#--star-history)
+- [💖 Support & Sponsorship](#-support--sponsorship)
 
 ---
 
@@ -148,9 +151,31 @@ We welcome additions, corrections, and updates from the developer and security c
 
 ---
 
-## ⭐ Star History
+##  Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=ishandutta2007/Awesome-Billing-User-Roles-Permissions&type=Date)](https://star-history.com/#ishandutta2007/Awesome-Billing-User-Roles-Permissions&Date)
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Billing-User-Roles-Permissions&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Billing-User-Roles-Permissions&type=date&legend=top-left)
+
+---
+
+## 💖 Support & Sponsorship
+
+A heartfelt **thank you** to all developers, architects, and open-source contributors who explore, use, and contribute to this repository! 🙌
+
+If this project has saved you time, assisted with architecture design, or helped clarify billing roles and permissions, please consider showing your support:
+- ⭐ **Star this repository** to help others discover it.
+- 🍴 **Fork and contribute** your own insights, tools, and updates.
+- 📢 **Share** with your platform engineering, security, and finance teams.
+- ☕ **Buy a coffee & sponsor** the maintainer on GitHub Sponsors:
+
+<p align="center">
+  <a href="https://github.com/sponsors/ishandutta2007">
+    <img src="https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?style=for-the-badge&logo=github-sponsors" alt="Sponsor on GitHub" />
+  </a>
+</p>
+
+Visit the **[GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007)** to support ongoing maintenance and new curated open-source projects! ☕🚀
+
+---
 
 <p align="center">
   <b>Built with ❤️ for SaaS Architects, Platform Engineers, and Security Leaders.</b><br>
