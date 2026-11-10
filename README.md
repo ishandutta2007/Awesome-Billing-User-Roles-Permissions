@@ -104,3 +104,12 @@ Star the repo if you find it useful!
 
 **Made for SaaS finance engineers, platform security teams, identity architects, and developers building billing access control.**  
 Let's make billing user permissions more open, granular, and auditable.
+
+## ⭐ Star History
+
+<a href="https://star-history.com/#ishandutta2007/Awesome-Billing-User-Roles-Permissions&Timeline" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ishandutta2007_Awesome-Billing-User-Roles-Permissions_growth.svg">
+    <img alt="Star History Chart" src="assets/ishandutta2007_Awesome-Billing-User-Roles-Permissions_growth.svg">
+  </picture>
+</a>
